@@ -26,6 +26,7 @@ files
     }
   });
 }else if(pref == '-s'){
+if(!next) return console.log('Please fill After named args');
     try {
         data = readFileSync(dir);
         arrByte = Uint8Array.from(data);
